@@ -1,9 +1,17 @@
 import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'reactstrap';
+
+import Menu from './components/menu'
+import Articles from './components/articles'
+import Footer from './components/footer'
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <Menu></Menu>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,7 +26,10 @@ function App() {
           Learn React
         </a>
         oi mundo
+        <Button color="danger">Danger!</Button>
       </header>
+      <Articles></Articles>
+      <Footer></Footer>
     </div>
   );
 }
